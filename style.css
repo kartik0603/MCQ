@@ -1,0 +1,120 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Quiz container */
+#quiz {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Question styling */
+.question p {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+/* Options styling */
+.options label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Timer styling */
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Results section */
+#results {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Results heading */
+#results h2 {
+    margin: 0 0 10px;
+}
+
+/* Explanation styling */
+#results div {
+    margin-bottom: 20px;
+}
+
+#results p {
+    margin: 5px 0;
+}
+
+/* Show results */
+#results.show {
+    display: block;
+}
+
+/* Button styling */
+#submit {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.hidden {
+    display: none;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#results {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+#results.show {
+    opacity: 1;
+}
